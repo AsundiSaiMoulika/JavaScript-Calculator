@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>caluculator</title>
+    <style>
+        .clc{
+            width:200px;
+            height:300px;
+            position: fixed;
+            top:0px;
+            left:0px;
+            bottom: 0px;
+            right:0px;
+            margin: auto;
+            box-sizing: border-box;
+            
+        }
+
+        #result{
+            box-sizing:border-box;
+            padding:25px 10px;
+            text-align: right;
+            background-color:#2d61b5;
+            color:#fff;
+            height:100px;
+            font-size: 26px;
+            line-height: 50px;
+        }
+
+        #inputs{
+            width:200px;
+            height:200px;
+        }
+
+        .nums{
+        width:150px;
+        height:200px;
+        float:left;
+        }
+
+        .oper{
+            width:50px;
+            height:200px;
+            float: left;
+            background-color: #000;
+
+        }
+
+        .nums div{
+            width:50px;
+            height:50px;
+            float: left;
+            background-color: #e2e2e2;
+            display: block;
+            cursor:pointer;
+            color:black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+           
+
+        }
+
+        .nums div:hover{
+            background-color: #bcbfc4;
+        }
+
+        .oper div{
+            width:50px;
+            height:33.33px;
+            background-color: black;
+            color:#fff;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            line-height: 33px;
+            cursor: pointer;
+
+        }
+
+        .oper div:hover{
+            background-color: #101010;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="clc">
+        <div id="result">
+
+        </div>
+        <div id="inputs">
+            <div class="nums">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+
+                <div>C</div>
+                <div>0</div>
+                <div>.</div>
+            </div>
+            <div class="oper">
+                    <div>Del</div>
+                    <div>+</div>
+                    <div>-</div>
+                    <div>*</div>
+                    <div>/</div>
+                    <div>=</div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="jsfile.js"></script>
+</body>
+</html>
